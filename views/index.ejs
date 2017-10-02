@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+    <title>Eneida</title>
+</head>
+
+<body ng-app="MyApp">
+
+    <h1>Енеїда</h1>
+    <div ng-controller="MainCntrl">
+        {{eneida}}
+    </div>
+    <script>
+        var app = angular.module('MyApp', []);
+        app.controller('MainCntrl', function($scope) {
+            $scope.eneida = 8;
+        });
+    </script>
+</body>
+
+</html>
